@@ -1,7 +1,7 @@
 # Electricity_Usage_Prediction. [(Link)](https://dacon.io/competitions/official/236125/leaderboard)
 
 ## 🏆 Result
-- **Public score 7th** 5.04758 | **Private score 22th** 6.63985
+- **Public score 7th(0.3%)** 5.04758 | **Private score 22th(1%)** 6.63985
 
 
 
