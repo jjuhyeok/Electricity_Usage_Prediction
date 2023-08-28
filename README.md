@@ -2,25 +2,19 @@
 # [DACON] 제주도 도로 교통량 예측 AI 경진대회 [(Link)](https://dacon.io/competitions/official/235985/leaderboard)
 
 ## 🏆 Result
-- **Public score 2nd** 3.07714 | **Private score 4th** 3.0852 | **최종 3등(🏆)**
+- **Public score 7th** 5.04758 | **Private score 22th** 6.63985
 
 
 
-
-주최 : 제주 테크노파크, 제주특별자치도
+주최 : 한국에너지공단
 
 주관 : DACON
 
-규모 : 총 1400여명 참가
+규모 : 총 2000여명 참가
 
 ===========================================================================
 
 
-
-<img width="100%" src="https://github.com/jjuhyeok/JEJU-Jeju_Island_Traffic_Jam_Prediction/assets/49608953/280daa88-d754-44ed-85ae-186629dc3c20"/>
-  
-**같이 참여했던 팀원분의 개발 블로그를 보던 중 발견한 감동적인 글..**  
-**나의 노력을 알아 주셔서 정말 감사했다.. 더 열심히 살게 되는 원동력..**  
 
 ===========================================================================
   
