@@ -1,5 +1,4 @@
-# Electricity_Usage_Prediction.
-# [DACON] 제주도 도로 교통량 예측 AI 경진대회 [(Link)](https://dacon.io/competitions/official/235985/leaderboard)
+# Electricity_Usage_Prediction. [(Link)](https://dacon.io/competitions/official/236125/leaderboard)
 
 ## 🏆 Result
 - **Public score 7th** 5.04758 | **Private score 22th** 6.63985
