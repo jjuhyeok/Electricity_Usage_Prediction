@@ -39,7 +39,6 @@
 
 ============================================================
 
-# 🚨 문제 발생과 해결 방안
 
 
 <br>
@@ -91,16 +90,19 @@
 
   * XGBoostRegressor 모델 사용
   * Optuna를 활용하여 하이퍼파라미터 튜닝
-  * 교차 검증 활용(stratified k-fold cross validation)
-  * target 값은 정수형으로 이루어져있다는 사실에 기반하여 예측값을 round 
+
+**3. Validation**
+  * 일반적인 K-fold
+  * day에 따른 Stratify K-fold
+  * day-hour에 따른 Stratify K-fold
+  * week-day-hour에 따른 Stratify K-fold (public과 제일 Score 유사 == 강건한 모델링을 위한 Validation 방법)
+  * 비가 올 때 안올 때 + week-day-hour에 따른 Stratify K-fold
+
 
 **추가 시도 사항** (최종 결과 도출에는 비사용)
-  * IQR * 1.5 2.0 등등 값을 변화해가며 폭주 or 사고라고 생각하는 이상치들을 drop -> 정확도가 오히려 낮아짐
-  * 3 sigma 법칙을 이용해 폭주 or 사고라고 생각하는 이상치들을 drop -> 정확도가 오히려 낮아짐
-  * Stacking 기법 -> 마지막에 시도하였지만 시간이 부족해 base model의 충분한 하이퍼파라미터 튜닝을 하지 못해 성능이 약간 하락
-    -> 대회 종료 후 다시 확인하였더니 Stacking 기법이 더 점수가 좋았음
-  * 관광지 관련 파생변수 생성할 때 카카오맵 API를 사용하였는데 DataLeakage로 최종 제출에는 사용하지 않음 -> 제일 성능이 좋았음
-  * 다양한 KFold K 변경
-
+  * Test의 값들은 모두 "예보"이기 때문에 이를 보정하기 위한 방법이 필요하다고 생각하여 노이즈를 주거나 스무딩 기법 사용 -> 정확도가 오히려 낮아짐
+  * 각 시간이나 빌딩의 특성을 더 강조하고 싶어 전력 사용량의 통계를 활용한 파생 변수들을 많이 만들었음 -> 정확도가 오히려 낮아짐
+  * Stacking 기법
+  * Temporal Fusion Transformer 사용 -> 성능이 엄청 높게 나왔지만, 사용 가능 gpu가 부족하여 그 뒤로는 시도하지 못했음
 
   
